@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GamersClub Ultimate</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:'Segoe UI',sans-serif;
+background:#090114;
+color:#f5f3ff;
+line-height:1.8;
+}
+
+.navbar{
+position:sticky;
+top:0;
+z-index:1000;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 40px;
+background:rgba(20,10,40,.95);
+backdrop-filter:blur(10px);
+border-bottom:1px solid #7c3aed;
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(15,5,35,.75),rgba(15,5,35,.75)),
+url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:5rem;
+color:#c084fc;
+text-shadow:0 0 25px #9333ea;
+}
+
+.hero p{
+max-width:800px;
+font-size:1.3rem;
+}
+
+.btn{
+margin-top:20px;
+padding:14px 28px;
+background:#9333ea;
+color:white;
+text-decoration:none;
+border-radius:10px;
+}
+
+section{padding:70px 10%;}
+
+h2{
+color:#c084fc;
+margin-bottom:25px;
+font-size:2.2rem;
+}
+
+.card{
+background:#160d2d;
+padding:25px;
+border-radius:15px;
+border:1px solid #7c3aed;
+box-shadow:0 0 20px rgba(124,58,237,.2);
+}
+
+.timeline{
+display:flex;
+flex-direction:column;
+gap:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.game-img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.counter{
+font-size:3rem;
+font-weight:bold;
+color:#c084fc;
+}
+
+footer{
+background:#14091f;
+padding:30px;
+text-align:center;
+margin-top:50px;
+}
+
+.highlight{
+color:#d8b4fe;
+font-weight:bold;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+<h2>🎮 GamersClub</h2>
+<div>
+<a href="#historia">História</a>
+<a href="#jogos">Jogos</a>
+<a href="#empresas">Empresas</a>
+</div>
+</nav>
+
+<header class="hero">
+<h1>GamersClub</h1>
+<p>
+Da criação dos primeiros jogos experimentais até uma indústria que movimenta centenas de milhares de milhões de dólares.
+</p>
+<a class="btn" href="#historia">Começar Jornada</a>
+</header>
+
+<section id="historia">
+<h2>📜 História dos Videojogos</h2>
+
+<p>
+Os videojogos surgiram a partir de experiências informáticas nas décadas de 1950 e 1960. O objetivo inicial não era criar uma indústria,
+mas demonstrar o potencial dos computadores. Com o aparecimento dos arcades nos anos 70 e das consolas domésticas nos anos 80,
+os videojogos transformaram-se num fenómeno global.
+</p><br>
+
+<div class="timeline">
+
+<div class="card">
+<h3>1970 — O Nascimento</h3>
+<p>Pong demonstrou que os jogos eletrónicos podiam ser comercialmente viáveis. Os arcades tornaram-se pontos de encontro para milhões de pessoas.</p>
+</div>
+
+<div class="card">
+<h3>1980 — A Era Dourada</h3>
+<p>Pac-Man, Donkey Kong e Space Invaders mostraram que personagens e narrativas simples podiam criar fenómenos culturais.</p>
+</div>
+
+<div class="card">
+<h3>1990 — A Revolução 3D</h3>
+<p>PlayStation, Nintendo 64 e PCs mais poderosos permitiram mundos tridimensionais mais realistas e experiências mais imersivas.</p>
+</div>
+
+<div class="card">
+<h3>2000 — A Internet Muda Tudo</h3>
+<p>Os jogos online criaram comunidades globais. MMORPGs, FPS competitivos e mercados digitais mudaram completamente a indústria.</p>
+</div>
+
+<div class="card">
+<h3>2010 — Streaming e eSports</h3>
+<p>Os videojogos passaram a ser assistidos por milhões de pessoas através de plataformas de streaming e campeonatos internacionais.</p>
+</div>
+
+<div class="card">
+<h3>2020+ — Cloud Gaming e IA</h3>
+<p>Os avanços em inteligência artificial, realidade virtual e computação em nuvem estão a redefinir a forma como os jogos são criados e consumidos.</p>
+</div>
+
+</div>
+</section>
+
+<section id="jogos">
+<h2>🏆 Jogos Mais Influentes</h2>
+
+<div class="grid">
+
+<div class="card">
+<img class="game-img" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80">
+<h3>Minecraft</h3>
+<p>Transformou a criatividade em jogabilidade. Mais do que um jogo, tornou-se uma ferramenta educativa e criativa utilizada por milhões.</p>
+</div>
+
+<div class="card">
+<img class="game-img" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80">
+<h3>Fortnite</h3>
+<p>Popularizou eventos ao vivo dentro dos videojogos e redefiniu o conceito de Battle Royale.</p>
+</div>
+
+<div class="card">
+<img class="game-img" src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=900&q=80">
+<h3>League of Legends</h3>
+<p>Um dos pilares dos eSports modernos e uma das maiores comunidades competitivas do planeta.</p>
+</div>
+
+</div>
+</section>
+
+<section id="empresas">
+<h2>🏢 Gigantes da Indústria</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Nintendo</h3>
+<p>Criadora de Mario, Zelda e Pokémon. Uma das empresas mais influentes da história do entretenimento.</p>
+</div>
+
+<div class="card">
+<h3>Sony PlayStation</h3>
+<p>Responsável por algumas das consolas mais vendidas da história e por diversas franquias premiadas.</p>
+</div>
+
+<div class="card">
+<h3>Microsoft Xbox</h3>
+<p>Pioneira em serviços online e subscrições de jogos através do Game Pass.</p>
+</div>
+
+<div class="card">
+<h3>Valve</h3>
+<p>Criadora do Steam, plataforma que revolucionou a distribuição digital para PC.</p>
+</div>
+
+<div class="card">
+<h3>Epic Games</h3>
+<p>Responsável pelo Unreal Engine e por Fortnite, influenciando toda a indústria.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>📊 Dimensão da Indústria</h2>
+
+<div class="stats">
+<div class="card">
+<div class="counter" data-target="3200">0</div>
+<p>Milhões de Jogadores</p>
+</div>
+
+<div class="card">
+<div class="counter" data-target="210">0</div>
+<p>Mil Milhões USD em Receita</p>
+</div>
+
+<div class="card">
+<div class="counter" data-target="1">0</div>
+<p>Indústria Próxima de Escala Trilionária</p>
+</div>
+</div>
+
+<br><br>
+
+<p>
+Atualmente, a indústria dos videojogos movimenta mais de
+<span class="highlight">200 mil milhões de dólares</span> por ano,
+serve mais de <span class="highlight">3,2 mil milhões de jogadores</span>
+e é considerada uma das maiores indústrias de entretenimento do mundo.
+</p>
+
+</section>
+
+<footer>
+© 2026 GamersClub Ultimate Edition
+</footer>
+
+<script>
+document.querySelectorAll(".counter").forEach(counter=>{
+let target=+counter.dataset.target;
+let count=0;
+let step=Math.max(1,Math.ceil(target/100));
+let interval=setInterval(()=>{
+count+=step;
+if(count>=target){
+count=target;
+clearInterval(interval);
+}
+counter.textContent=count;
+},20);
+});
+</script>
+
+</body>
+</html>
