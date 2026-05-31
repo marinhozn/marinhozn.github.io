@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GamersClub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+<div class="logo">🎮 GamersClub</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#historia">História</a></li>
+<li><a href="#jogos">Jogos</a></li>
+<li><a href="#empresas">Empresas</a></li>
+<li><a href="#contacto">Contacto</a></li>
+</ul>
+</nav>
+
+<header id="home" class="hero">
+<h1>GamersClub</h1>
+<p>Joga. Aprende. Explora.</p>
+<button onclick="document.getElementById('historia').scrollIntoView()">Começar</button>
+</header>
+
+<section id="historia">
+<h2>História dos Videojogos</h2>
+<div class="timeline">
+<div><h3>1970s</h3><p>Arcades e primeiros sucessos.</p></div>
+<div><h3>1980s</h3><p>Popularização das consolas domésticas.</p></div>
+<div><h3>1990s</h3><p>Revolução dos gráficos 3D.</p></div>
+<div><h3>2000s</h3><p>Explosão dos jogos online.</p></div>
+<div><h3>2010+</h3><p>Streaming, eSports e cloud gaming.</p></div>
+</div>
+</section>
+
+<section id="jogos">
+<h2>Top Jogos</h2>
+<div class="grid">
+<div class="card">Minecraft</div>
+<div class="card">Fortnite</div>
+<div class="card">League of Legends</div>
+<div class="card">Counter-Strike 2</div>
+<div class="card">Roblox</div>
+<div class="card">GTA V</div>
+</div>
+</section>
+
+<section id="empresas">
+<h2>Empresas da Indústria</h2>
+<div class="grid">
+<div class="card">Nintendo</div>
+<div class="card">Sony PlayStation</div>
+<div class="card">Microsoft Xbox</div>
+<div class="card">Valve</div>
+<div class="card">Epic Games</div>
+<div class="card">Rockstar Games</div>
+</div>
+</section>
+
+<section class="stats">
+<div><span class="counter" data-target="3000">0</span><p>Milhões de jogadores</p></div>
+<div><span class="counter" data-target="200">0</span><p>Mil mil milhões USD</p></div>
+<div><span class="counter" data-target="50">0</span><p>Anos de evolução</p></div>
+</section>
+
+<section id="contacto">
+<h2>Contacto</h2>
+<form>
+<input placeholder="Nome">
+<input placeholder="Email">
+<textarea placeholder="Mensagem"></textarea>
+<button type="button">Enviar</button>
+</form>
+</section>
+
+<footer>© 2026 GamersClub</footer>
+<script src="script.js"></script>
+</body>
+</html>
